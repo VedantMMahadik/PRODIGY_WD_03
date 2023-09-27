@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav {
+    background-color: transparent;
+    color: greenyellow;
+    height: 70px;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    font-family: 'Baloo Bhaina 2',cursive;
+}
+.gamecontainer{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Baloo Bhaina 2',cursive;
+    position: relative;
+}
+.box{
+    border: 3px solid white;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+.box:hover{
+    background-color: #817e7e;
+}
+.info{
+    font-size: 45px;
+    color: #ccc;
+    color: ghostwhite;
+}
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2',cursive;
+    color: #ccc;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+    color: yellowgreen;
+}
+.imgbox img{
+    width: 0;
+    transition: width is ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    height: 50px;
+    width: 100px;
+    margin: 0 23px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ccc;
+    font-family: 'Baloo Bhaina 2',cursive;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#reset:hover{
+    border: 2px solid #ccc;
+    background-color: yellowgreen;
+}
+.line{
+    background-color: white;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+@media screen and (max-width: 950px) {
+    .gamecontainer{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1 {
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        /* align-items: center; */
+        justify-content: center;
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+    .line{
+        display: none;
+    }
+    body{
+        /* background-size: cover; */
+        height: 1000px;
+    }
+   
+}
+@media screen and (min-width:966px) and (max-width:1150px){
+    body{
+        background-image: url("https://wallpaperset.com/w/full/7/e/8/38899.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 900px;
+    }
+ }
+body{
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://media.istockphoto.com/id/1292919739/vector/tic-tac-toe-school-game-colorful-seamless-pattern-for-fabric-and-print-on-the-paper.jpg?s=612x612&w=0&k=20&c=Q4gMspKHffPmhKuofb_Rb_WCD8uAgbsbXSKuWEcziM8="); */
+    background-image: url("https://wallpaperset.com/w/full/7/e/8/38899.jpg");
+    background-position: center;
+    background-size: cover;
+}
